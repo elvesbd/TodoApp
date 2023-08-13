@@ -1,0 +1,12 @@
+/home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Infra/bin/Debug/net7.0/TodoApp.Domain.Infra.deps.json
+/home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Infra/bin/Debug/net7.0/TodoApp.Domain.Infra.dll
+/home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Infra/bin/Debug/net7.0/TodoApp.Domain.Infra.pdb
+/home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Infra/obj/Debug/net7.0/TodoApp.Domain.Infra.csproj.AssemblyReference.cache
+/home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Infra/obj/Debug/net7.0/TodoApp.Domain.Infra.GeneratedMSBuildEditorConfig.editorconfig
+/home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Infra/obj/Debug/net7.0/TodoApp.Domain.Infra.AssemblyInfoInputs.cache
+/home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Infra/obj/Debug/net7.0/TodoApp.Domain.Infra.AssemblyInfo.cs
+/home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Infra/obj/Debug/net7.0/TodoApp.Domain.Infra.csproj.CoreCompileInputs.cache
+/home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Infra/obj/Debug/net7.0/TodoApp.Domain.Infra.dll
+/home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Infra/obj/Debug/net7.0/refint/TodoApp.Domain.Infra.dll
+/home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Infra/obj/Debug/net7.0/TodoApp.Domain.Infra.pdb
+/home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Infra/obj/Debug/net7.0/ref/TodoApp.Domain.Infra.dll
