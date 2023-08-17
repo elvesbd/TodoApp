@@ -98,3 +98,4 @@
 /home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Tests/bin/Debug/net7.0/CoverletSourceRootsMapping
 /home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Tests/bin/Debug/net7.0/TodoApp.Domain.dll
 /home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Tests/bin/Debug/net7.0/TodoApp.Domain.pdb
+/home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Tests/bin/Debug/net7.0/Flunt.dll

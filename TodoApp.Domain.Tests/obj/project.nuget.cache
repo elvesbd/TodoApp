@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "GgVujjl8cWX+BcQedpLuPlpTFYMaYoQ27o6asEfuZVbVhNpZCH6OwANv21cTtmJSO4b9kWDe1PMeDrT8nRrFpw==",
+  "dgSpecHash": "ATAdx71+Inq0+Z5zbgLJqgJAcbMRGHveQ2bIk4NHQGpsRdIRHtTW0vfkX3QnA9DTXpWduJJi8B40o9neq1/iyA==",
   "success": true,
   "projectFilePath": "/home/ebd/ebd/baltaio/BackEndCourse/TodoApp/TodoApp.Domain.Tests/TodoApp.Domain.Tests.csproj",
   "expectedPackageFiles": [
     "/home/ebd/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
+    "/home/ebd/.nuget/packages/flunt/2.0.5/flunt.2.0.5.nupkg.sha512",
     "/home/ebd/.nuget/packages/microsoft.codecoverage/17.3.2/microsoft.codecoverage.17.3.2.nupkg.sha512",
     "/home/ebd/.nuget/packages/microsoft.csharp/4.3.0/microsoft.csharp.4.3.0.nupkg.sha512",
     "/home/ebd/.nuget/packages/microsoft.net.test.sdk/17.3.2/microsoft.net.test.sdk.17.3.2.nupkg.sha512",
