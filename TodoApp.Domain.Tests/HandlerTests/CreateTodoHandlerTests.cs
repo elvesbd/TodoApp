@@ -1,4 +1,4 @@
-namespace TodoApp.Domain.Tests.CommandsTests;
+namespace TodoApp.Domain.Tests.HandlerTests;
 
 [TestClass]
 public class CreateTodoHandlerTests
