@@ -17,6 +17,13 @@ public class TodoHandler : Notifiable<Notification>, IHandler<CreateTodoCommand>
 
     public ICommandResult Handle(CreateTodoCommand command)
     {
-        throw new NotImplementedException();
+        command.Validate();
+        if (!command.IsValid)
+            return new GenericCommandResult
+            (
+                false,
+                "Ops, parece que sua tarefa está errada!",
+                command.Notifications
+            );
     }
 }
