@@ -5,24 +5,20 @@ namespace TodoApp.Domain.Tests.CommandsTests;
 [TestClass]
 public class CreateTodoCommandTests
 {
+    private readonly CreateTodoCommand _invalidCommand = new("", "", DateTime.Now);
+    private readonly CreateTodoCommand _validCommand = new("Create Repo", "Elves Brito", DateTime.Now);
+
     [TestMethod]
     public void Given_an_invalid_command()
     {
-        var command = new CreateTodoCommand("", "", DateTime.Now);
-        command.Validate();
-        Assert.AreEqual(command.IsValid, false);
+        _invalidCommand.Validate();
+        Assert.AreEqual(_invalidCommand.IsValid, false);
     }
 
     [TestMethod]
     public void Given_an_valid_command()
     {
-        var command = new CreateTodoCommand
-        (
-           "Create Repo",
-           "Elves Brito",
-           DateTime.Now
-        );
-        command.Validate();
-        Assert.AreEqual(command.IsValid, true);
+        _validCommand.Validate();
+        Assert.AreEqual(_validCommand.IsValid, true);
     }
 }
