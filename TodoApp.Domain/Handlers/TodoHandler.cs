@@ -1,6 +1,7 @@
 using Flunt.Notifications;
 using TodoApp.Domain.Commands;
 using TodoApp.Domain.Commands.Interfaces;
+using TodoApp.Domain.Entities;
 using TodoApp.Domain.Handlers.Interfaces;
 using TodoApp.Domain.Repositories;
 
@@ -25,5 +26,9 @@ public class TodoHandler : Notifiable<Notification>, IHandler<CreateTodoCommand>
                 "Ops, parece que sua tarefa está errada!",
                 command.Notifications
             );
+
+        var todo = new Todo(command.Title, command.User, command.Date);
+        _repository.Create(todo);
+        return new GenericCommandResult(true, "Tarefa salva com sucesso!", todo);
     }
 }
