@@ -21,7 +21,7 @@ public class TodoTests
     }
 
     [TestMethod]
-    public void Given_marking_a_todo_as_undone_Done_should_be_false()
+    public void Given_marking_a_todo_as_undone_done_should_be_false()
     {
         var todo = new Todo("Create Repo", "Elves Brito", DateTime.Now, true);
         todo.MarkAsUndone();
