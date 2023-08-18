@@ -27,4 +27,12 @@ public class TodoTests
         todo.MarkAsUndone();
         Assert.IsFalse(todo.Done);
     }
+
+    [TestMethod]
+    public void Given_updating_todo_title_new_title_should_be_set()
+    {
+        var todo = new Todo("Create Repo", "Elves Brito", DateTime.Now, true);
+        todo.UpdateTitle("Update Repo");
+        Assert.AreEqual(todo.Title, "Update Repo");
+    }
 }
