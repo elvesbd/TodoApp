@@ -9,4 +9,9 @@ public static class TodoQueries
     {
         return x => x.User == user;
     }
+
+    public static Expression<Func<Todo, bool>> GetAllDone(string user)
+    {
+        return x => x.User == user && x.Done;
+    }
 }
