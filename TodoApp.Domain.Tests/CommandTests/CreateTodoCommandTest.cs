@@ -1,6 +1,6 @@
 using TodoApp.Domain.Commands;
 
-namespace TodoApp.Domain.Tests.CommandsTests;
+namespace TodoApp.Domain.Tests.CommandTests;
 
 [TestClass]
 public class CreateTodoCommandTests
