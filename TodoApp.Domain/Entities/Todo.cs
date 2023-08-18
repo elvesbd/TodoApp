@@ -2,10 +2,10 @@ namespace TodoApp.Domain.Entities;
 
 public class Todo : Entity
 {
-    public Todo(string title, string user, DateTime date)
+    public Todo(string title, string user, DateTime date, bool done = false)
     {
         Title = title;
-        Done = false;
+        Done = done;
         Date = date;
         User = user;
     }
