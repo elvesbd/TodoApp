@@ -19,4 +19,24 @@ public class FakeTodoRepository : ITodoRepository
     {
 
     }
+
+    public IEnumerable<Todo> GetAll(string user)
+    {
+        throw new NotImplementedException();
+    }
+
+    public IEnumerable<Todo> GetAllDone(string user)
+    {
+        throw new NotImplementedException();
+    }
+
+    public IEnumerable<Todo> GetAllUndone(string user)
+    {
+        throw new NotImplementedException();
+    }
+
+    public IEnumerable<Todo> GetByPeriod(string user, DateTime date, bool done)
+    {
+        throw new NotImplementedException();
+    }
 }
