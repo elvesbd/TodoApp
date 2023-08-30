@@ -84,7 +84,6 @@ namespace TodoApp.Domain.Controllers
         [HttpPost]
         public GenericCommandResult Create([FromBody] CreateTodoCommand command)
         {
-            command.User = "elvesbrito";
             return (GenericCommandResult)_handler.Handle(command);
         }
 
