@@ -23,7 +23,7 @@ public class MarkTodoAsUndoneCommand : Notifiable<Notification>, ICommand
         AddNotifications(
             new Contract<MarkTodoAsUndoneCommand>()
                 .Requires()
-                .IsLowerOrEqualsThan(User, 6, "User", "Invalid user!")
+                .IsGreaterOrEqualsThan(User, 6, "User", "Invalid user!")
         );
     }
 }

@@ -50,7 +50,7 @@ public class TodoHandler :
         var todo = _repository.GetById(command.Id, command.User);
         todo.UpdateTitle(command.Title);
         _repository.Update(todo);
-        return new GenericCommandResult(true, "Tarefa salva con sucesso!", todo);
+        return new GenericCommandResult(true, "Tarefa atualizada con sucesso!", todo);
     }
 
     public ICommandResult Handle(MarkTodoAsDoneCommand command)
@@ -67,7 +67,7 @@ public class TodoHandler :
         var todo = _repository.GetById(command.Id, command.User);
         todo.MarkAsDone();
         _repository.Update(todo);
-        return new GenericCommandResult(true, "Tarefa salva con sucesso!", todo);
+        return new GenericCommandResult(true, "Tarefa atualizada con sucesso!", todo);
     }
 
     public ICommandResult Handle(MarkTodoAsUndoneCommand command)
@@ -84,6 +84,6 @@ public class TodoHandler :
         var todo = _repository.GetById(command.Id, command.User);
         todo.MarkAsUndone();
         _repository.Update(todo);
-        return new GenericCommandResult(true, "Tarefa salva con sucesso!", todo);
+        return new GenericCommandResult(true, "Tarefa atualizada con sucesso!", todo);
     }
 }

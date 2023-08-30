@@ -23,7 +23,7 @@ public class MarkTodoAsDoneCommand : Notifiable<Notification>, ICommand
         AddNotifications(
             new Contract<MarkTodoAsDoneCommand>()
                 .Requires()
-                .IsLowerOrEqualsThan(User, 6, "User", "Invalid user!")
+                .IsGreaterOrEqualsThan(User, 6, "User", "Invalid user!")
         );
     }
 }
