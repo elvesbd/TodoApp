@@ -19,63 +19,63 @@ namespace TodoApp.Domain.Controllers
             _repository = repository;
         }
 
-        [HttpGet]
-        public IEnumerable<Todo> GetAll()
+        [HttpGet("user/{user}")]
+        public IEnumerable<Todo> GetAll([FromRoute] string user)
         {
-            return _repository.GetAll("elvesbrito");
+            return _repository.GetAll(user);
         }
 
-        [HttpGet("done")]
-        public IEnumerable<Todo> GetAllDone()
+        [HttpGet("done/{user}")]
+        public IEnumerable<Todo> GetAllDone([FromRoute] string user)
         {
-            return _repository.GetAllDone("elvesbrito");
+            return _repository.GetAllDone(user);
         }
 
-        [HttpGet("undone")]
-        public IEnumerable<Todo> GetAllUndone()
+        [HttpGet("undone/{user}")]
+        public IEnumerable<Todo> GetAllUndone([FromRoute] string user)
         {
-            return _repository.GetAllUndone("elvesbrito");
+            return _repository.GetAllUndone(user);
         }
 
-        [HttpGet("done/today")]
-        public IEnumerable<Todo> GetDoneForToday()
+        [HttpGet("done/today/{user}")]
+        public IEnumerable<Todo> GetDoneForToday([FromRoute] string user)
         {
             return _repository.GetByPeriod
             (
-                "elvesbrito",
+                user,
                 DateTime.Now.Date,
                 true
             );
         }
 
-        [HttpGet("undone/today")]
-        public IEnumerable<Todo> GetUndoneForToday()
+        [HttpGet("undone/today/{user}")]
+        public IEnumerable<Todo> GetUndoneForToday([FromRoute] string user)
         {
             return _repository.GetByPeriod
             (
-                "elvesbrito",
+                user,
                 DateTime.Now.Date,
                 false
             );
         }
 
-        [HttpGet("done/tomorrow")]
-        public IEnumerable<Todo> GetDoneForTomorrow()
+        [HttpGet("done/tomorrow/{user}")]
+        public IEnumerable<Todo> GetDoneForTomorrow([FromRoute] string user)
         {
             return _repository.GetByPeriod
             (
-                "elvesbrito",
+                user,
                 DateTime.Now.Date.AddDays(1),
                 true
             );
         }
 
-        [HttpGet("undone/tomorrow")]
-        public IEnumerable<Todo> GetUndoneForTomorrow()
+        [HttpGet("undone/tomorrow/{user}")]
+        public IEnumerable<Todo> GetUndoneForTomorrow([FromRoute] string user)
         {
             return _repository.GetByPeriod
             (
-                "elvesbrito",
+                user,
                 DateTime.Now.Date.AddDays(1),
                 false
             );
