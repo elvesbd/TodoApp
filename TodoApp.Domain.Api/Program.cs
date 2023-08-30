@@ -7,8 +7,10 @@ using TodoApp.Domain.Repositories;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("database"));
-//builder.Services.AddDbContext<DataContext>(opt => opt.UseSqlServer(ConfigurationBinder.GetConnectionString("connectionString")));
+//builder.Services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("database"));
+builder.Services.AddDbContext<DataContext>(opt =>
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("connectionString"))
+);
 builder.Services.AddTransient<ITodoRepository, TodoRepository>();
 builder.Services.AddTransient<TodoHandler, TodoHandler>();
 builder.Services.AddEndpointsApiExplorer();
